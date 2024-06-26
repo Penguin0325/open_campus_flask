@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>謎解き(仮)</title>
+    <!-- ここにstylesheetを追加 -->
+    <link rel="stylesheet" href="/static/css/hints.css">
+    <!-- <style title=visualStyle type=text/css>
+        @import url(./static/css/style.css);
+    </style> -->
+</head>
+<body>
+    <h1>オープンキャンパス謎解きヒントページ</h1>
+
+    <input type="button" value="クリック" id="button" onclick="toggleDisplay('div1')">
+    <div id="div1">表示・非表示</div>
+
+    <input type="button" value="クリック" id="button" onclick="toggleDisplay('div2')">
+    <div id="div2">こんにちは</div>
+
+    <input type="button" value="クリック" id="button" onclick="toggleDisplay('div3')">
+    <div id="div3">こんにちは</div>
+
+    <input type="button" value="クリック" id="button" onclick="toggleDisplay('div4')">
+    <div id="div4">こんにちは</div>
+
+    <input type="button" value="クリック" id="button" onclick="toggleDisplay('div5')">
+    <div id="div5">こんにちは</div>
+
+    <input type="button" value="クリック"id="button" onclick="toggleDisplay('div6')">
+    <div id="div6">こんにちは</div>
+
+    <script language="Javascript">
+        function toggleDisplay(id) {
+            var element = document.getElementById(id);
+            if (element.style.display === "none") {
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -9,42 +9,56 @@ def index():
     }
     return render_template('testapp/index.html', my_dict=my_dict)
 
+events = [
+    {
+        'title': 'event1',
+        'date': '2021-10-15'
+    },
+    {
+        'title': 'event2',
+        'date': '2024-06-20'
+    }
+]
 @app.route('/test')
 def test():
-    return render_template('test.html')
+    return render_template('test.html',events=events)
+
+@app.route('/hints')
+def hints():
+    return render_template('hints.html')
 
 @app.route('/story1')
-def test():
+def story1():
     return render_template('story1.html')
 
-@app.route('/story2')
-def test():
-    return render_template('story2.html')
+@app.route('/anser1')
+def anser1():
+    return render_template('mystery1anser')
 
-@app.route('/story3')
-def test():
-    return render_template('story3.html')
+@app.route('/anser2')
+def anser2():
+    return render_template('mystery2anser')
 
-@app.route('/story4')
-def test():
-    return render_template('story4.html')
+@app.route('/anser3')
+def anser3():
+    return render_template('mystery3anser')
 
 @app.route('/story5')
-def test():
+def story5():
     return render_template('story5.html')
 
 @app.route('/story6')
-def test():
+def story6():
     return render_template('story6.html')
 
 @app.route('/story7')
-def test():
+def story7():
     return render_template('story7.html')
 
 @app.route('/story8')
-def test():
+def story8():
     return render_template('story8.html')
 
 @app.route('/story9')
-def test():
+def story9():
     return render_template('story9.html')

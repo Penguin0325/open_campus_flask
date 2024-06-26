@@ -1,14 +1,40 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <link rel="stylesheet" href="/static/css/style.css">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>謎解き(仮)</title>
+    <!-- BootstrapのCDN -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- stylesheetを追加 -->
+    <link rel="stylesheet" href="/static/css/style.css">
+    <!-- FullCalendarのCSSとJS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.5.0/main.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.5.0/main.min.js"></script>
 </head>
 <body>
-    <h1>オープンキャンパス謎解き</h1>
-    <p>あらすじ</p>
+    <p>テスト用ページ</p>
+    <!-- <div class="container">
+        <div id="calendar"></div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            let calendarEl = document.getElementById('calendar');
+    
+            let calendar = new FullCalendar.Calendar(calendarEl, {
+                events: [
+                {% for event in events %}
+                {
+                    title: '{{ event.title }}',
+                    start: '{{ event.date }}',
+                },
+                {% endfor %}
+                ]
+            });
+    
+            calendar.render();
+        });
+    </script> -->
 </body>
 </html>
