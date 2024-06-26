@@ -1,0 +1,76 @@
+/* PC用のCSSはメディアクエリの外に記述する */
+.search-here {
+    color: #fff;
+    background-color: #e2001b;
+    border: none;
+    border-radius: 5px;
+    padding: 4px 10px;
+    margin: 10px 10px;
+}
+/* pc用デザイン */
+html, body, h1, p {
+  margin: 0;
+  padding: 0;
+}
+html, body, h1, p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+/* header {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: #bbbcde;
+    align-items: center;
+  }
+h1{
+    color: #0f2350;
+}
+  .title {
+    margin-right: auto;
+  }
+   
+  .menu-item {
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+  } */
+
+/* タブレット用デザイン */
+@media screen and (max-width: 959px) {
+    /* 959px以下に適用されるCSS（タブレット用） */
+    header {
+        font-size: 18px; /* タブレット用のフォントサイズ */
+    }
+}
+
+/* スマホ用デザイン */
+@media screen and (max-width: 480px) {
+    /* 480px以下に適用されるCSS（スマホ用） */
+    header {
+        font-size: 16px; /* スマホ用のフォントサイズ */
+    }
+}
