@@ -12,6 +12,18 @@
     </style> -->
 </head>
 <body>
+    <header>
+        <h1 class="title">タイトル</h1>
+        <nav class="nav">
+            <ul class="menu-group">
+                <!-- <li class="menu-item"><a href="hints">ヒント</a></li> -->
+                <!-- <li class="menu-item"><a href="#">項目2</a></li>
+                <li class="menu-item"><a href="#">項目3</a></li>
+                <li class="menu-item"><a href="#">項目4</a></li>
+                <li class="menu-item"><a href="#">項目5</a></li> -->
+            </ul>
+        </nav>
+    </header>
     <h1>オープンキャンパス謎解きヒントページ</h1>
 
     <input type="button" value="クリック" id="button" onclick="toggleDisplay('div1')">
@@ -31,6 +43,9 @@
 
     <input type="button" value="クリック"id="button" onclick="toggleDisplay('div6')">
     <div id="div6">こんにちは</div>
+
+    <!-- 前のページに戻るリンク -->
+    <a href="javascript:history.back()" class="back-link">前のページに戻る</a>
 
     <script language="Javascript">
         function toggleDisplay(id) {
