@@ -28,6 +28,10 @@ def hints():
 def map():
     return render_template('map.html')
 
+@app.route('/nazo1')
+def nazo1():
+    return render_template('nazo1-3.html')
+
 @app.route('/character')
 def character():
     return render_template('character.html')
