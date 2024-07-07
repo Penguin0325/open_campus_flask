@@ -3,11 +3,8 @@ from flask import render_template
 
 @app.route('/')
 def index():
-    my_dict = {
-        'insert_something1': 'views.pyのinsert_something1部分です。',
-        'insert_something2': 'views.pyのinsert_something2部分です。',
-    }
-    return render_template('testapp/index.html', my_dict=my_dict)
+    
+    return 'Hello World'
 
 events = [
     {
@@ -26,6 +23,10 @@ def test():
 @app.route('/hints')
 def hints():
     return render_template('hints.html')
+
+@app.route('/map')
+def map():
+    return render_template('map.html')
 
 @app.route('/character')
 def character():
@@ -66,3 +67,15 @@ def inputchatbot2():
 @app.route('/story9')
 def story9():
     return render_template('story9.html')
+
+@app.route('/endstory1')
+def endstory1():
+    return render_template('endstory1.html')
+
+@app.route('/endstory2')
+def endstory2():
+    return render_template('endstory2.html')
+
+@app.route('/endstory3')
+def endstory3():
+    return render_template('endstory3.html')
