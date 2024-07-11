@@ -24,6 +24,10 @@ def test():
 def error():
     return render_template('error.html')
 
+@app.route('/atogaki')
+def atogaki():
+    return render_template('atogaki.html')
+
 @app.route('/hints')
 def hints():
     return render_template('hints.html')
