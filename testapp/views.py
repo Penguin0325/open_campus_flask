@@ -1,5 +1,5 @@
 from testapp import app
-from flask import render_template
+from flask import render_template,redirect
 
 @app.route('/')
 def index():
@@ -19,6 +19,10 @@ events = [
 @app.route('/test')
 def test():
     return render_template('test.html',events=events)
+
+@app.route('/error')
+def error():
+    return render_template('error.html')
 
 @app.route('/hints')
 def hints():
