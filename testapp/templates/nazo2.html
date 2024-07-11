@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
     <title>謎解き(仮)</title>
     <link rel="stylesheet" href="/static/css/story.css">
+    <!-- <style title=visualStyle type=text/css>
+        @import url(./static/css/story.css);
+    </style> -->
 </head>
 <body>
     <header>
@@ -16,16 +20,13 @@
         <ul class="menu-group">
             <li class="menu-item"><a href="hints">ヒント</a></li>
             <li class="menu-item"><a href="map">地図</a></li>
+            <li class="menu-item"></li><a href="javascript:history.back()" class="back-button">戻る</a></li>
             <!-- <li class="menu-item"><a href="#contact">Contact</a></li> -->
         </ul>
     </nav>
-    <!-- nazo1から飛ぶページ -->
-    <h1>オープンキャンパス謎解き</h1>
-    <p>学生（男）「オープンキャンパスの準備中？うーん、間違えて消しちゃって丸一日かけて作ったプログラムがぶっ飛んだことぐらい？ミスした後に焦ってまたミスして…ってやってたら復元できなくなってさ〜。</p>
-    <p>あ〜俺の今日の頑張りの意味とは…って虚無になって、一日作業する気にならなかったよ。やらかして１日分、虚無って１日分進捗ゼロだったからそのあとが大変だったよ。」</p>
-    <div style="text-align: center;">
-        <a href="nazo2" class="page-button">謎２へ</a>
-    </div>
+    <!-- <h1>オープンキャンパス謎解き</h1> -->
+    <img src="{{url_for('static', filename='images/nazo1-2.png')}}" alt="画像">
+
     <script>
         function toggleMenu() {
             const nav = document.getElementById('nav');

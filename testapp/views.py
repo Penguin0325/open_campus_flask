@@ -38,7 +38,15 @@ def map():
 
 @app.route('/nazo1')
 def nazo1():
-    return render_template('nazo1-3.html')
+    return render_template('nazo1.html')
+
+@app.route('/nazo2')
+def nazo2():
+    return render_template('nazo2.html')
+
+@app.route('/nazo3')
+def nazo3():
+    return render_template('nazo3.html')
 
 @app.route('/character')
 def character():
